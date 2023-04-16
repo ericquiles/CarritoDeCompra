@@ -44,7 +44,6 @@ function agregarProductoAlCarrito(e) {
     carrito.push(producto);
   }
 
-  // 5. Actualizar la tabla del carrito con los productos agregados y el botón para borrar el elemento correspondiente.
   actualizarCarrito();
 }
 
@@ -67,7 +66,7 @@ function actualizarCarrito() {
   });
 }
 
-// 6. Agregar un evento para vaciar el carrito
+//  Agrego un evento para vaciar el carrito
 const botonVaciar = document.querySelector("#vaciar-carrito");
 botonVaciar.addEventListener("click", vaciarCarrito);
 
