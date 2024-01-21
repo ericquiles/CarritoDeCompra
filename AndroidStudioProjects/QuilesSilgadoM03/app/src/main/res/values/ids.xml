@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView5" type="id" />
+    <item name="nombreEditText" type="id" />
+    <item name="contrasenaEditText" type="id" />
+    <item name="loginButton" type="id" />
+    <item name="loginStatusTextView" type="id" />
+    <item name="linearLayout" type="id" />
+    <item name="navegation_home" type="id" />
+    <item name="homeFragment" type="id" />
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+
+
+    <fragment
+        android:id="@+id/contadorFragment"
+        android:name="com.example.quilessilgadom03.ContadorFragment"
+        android:label="fragment_contador"
+        tools:layout="@layout/fragment_contador" />
+    <fragment
+        android:id="@+id/exitFragment"
+        android:name="com.example.quilessilgadom03.ExitFragment"
+        android:label="fragment_exit"
+        tools:layout="@layout/fragment_exit" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.quilessilgadom03.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_exitFragment2"
+            app:destination="@id/exitFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_contadorFragment2"
+            app:destination="@id/contadorFragment" />
+    </fragment>
+</navigation>

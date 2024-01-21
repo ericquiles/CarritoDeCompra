@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F2F2F"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContadorFragment">
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="54dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4A4A4A"
+        android:onClick="volver"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        app:icon="@android:drawable/ic_media_rew"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="48dp">
+
+        <TextView
+            android:id="@+id/tituloContador"
+            android:layout_width="wrap_content"
+            android:layout_height="125dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="CONTADOR"
+            android:textColor="#FFFFFF"
+            android:textSize="55sp" />
+
+        <TextView
+            android:id="@+id/numeroContador"
+            android:layout_width="match_parent"
+            android:layout_height="374dp"
+            android:fontFamily="@font/poppins_thin"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="200sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1B1B1B"
+                android:fontFamily="@font/poppins_bold"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:cornerRadius="18dp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1B1B1B"
+                android:fontFamily="@font/poppins_medium"
+                android:text="RESET"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:cornerRadius="18dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1B1B1B"
+                android:fontFamily="@font/poppins_bold"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:cornerRadius="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtCreatedBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="center"
+        android:shadowColor="#ACABAB"
+        android:text="By Eric_Quiles"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout" />
+
+</FrameLayout>
